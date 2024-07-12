@@ -15,3 +15,7 @@ public class Statement {
 }
 
 //Compile time error
+//Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	b cannot be resolved to a variable
+
+	at Assignment_Two/Scope_operators.Statement.main(Statement.java:12)
