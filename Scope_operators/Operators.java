@@ -13,8 +13,8 @@ public class Operators {
         System.out.println("AND "+(a&b));
         System.out.println("OR "+(a|b));
         System.out.println("XOR "+(a^b));
-        System.out.println("right shift "+(a>>1));
-        System.out.println("unsigned right shift "+(a>>>1));
+        System.out.println("right shift "+(a>>b));
+        System.out.println("unsigned right shift "+(a>>>b));
         System.out.println("left shift "+(a<<b));
 
 	}
