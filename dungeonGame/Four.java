@@ -33,12 +33,16 @@ public class Four {
         int forHunter= fun(hunter_i,hunter_j,gold_i,gold_j,b,0);
         int forDragon= fun(dragon_i,dragon_j,gold_i,gold_j,b,0);
         int withTrigger=0;
+        int fromTrigger=0;
         System.out.println(forHunter+" "+forDragon);
         if(forDragon<forHunter) {
         	withTrigger=fun(hunter_i,hunter_j,trigger_i,trigger_j,b,0);
-
+                fromTigger=fun(trigger_i,trigger_j,gold_i,gold_j,b,0);
+		System.out.println(withTrigger+fromTrigger);
         }
-        System.out.println((withTrigger+forHunter)+" "+"is required");
+       else{
+            System.out.println(forHunter);
+		    }
 }
     public static int fun(int i,int j,int row,int col,int[][] b,int steps) {
     	if(i<0 || i>=b.length || j<0 || j>=b[0].length ||b[i][j]==-1) {
